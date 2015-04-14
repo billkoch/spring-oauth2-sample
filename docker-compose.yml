@@ -1,0 +1,9 @@
+oauthdb:
+  image: mysql/mysql-server:5.6.24
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+    MYSQL_DATABASE: oauth
+    MYSQL_USER: oauth
+    MYSQL_PASSWORD: oauth
+  ports:
+    - "3306:3306"
